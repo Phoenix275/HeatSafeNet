@@ -47,6 +47,7 @@ service-account*.json
 # Development tools
 .devtools/
 .config/
+.claude/
 .vscode/
 .idea/
 *.swp
