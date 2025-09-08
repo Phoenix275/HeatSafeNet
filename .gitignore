@@ -52,6 +52,13 @@ service-account*.json
 *.swp
 *.swo
 
+# Academic/research files  
+paper/
+policy/
+docs/
+*.tex
+*.bib
+
 # OS generated files
 .DS_Store
 .DS_Store?
