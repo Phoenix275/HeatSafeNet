@@ -1,0 +1,11 @@
+{
+  "county_fips": "04013",
+  "county_name": "Maricopa County, AZ",
+  "mean_lst_celsius": 39.944441209589876,
+  "std_lst_celsius": 3.4941441265042927,
+  "min_lst_celsius": 34.0,
+  "max_lst_celsius": 46.0,
+  "p25_lst_celsius": 37.24313096679232,
+  "p75_lst_celsius": 42.53712461765878,
+  "p95_lst_celsius": 46.0
+}

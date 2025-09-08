@@ -1,0 +1,47 @@
+# HeatSafeNet Requirements (pip version)
+# Core geospatial packages
+geopandas
+shapely
+rtree
+rasterio
+rioxarray
+xarray
+pyproj
+
+# Network analysis
+osmnx
+networkx
+
+# Data processing
+numpy
+pandas
+requests
+tqdm
+scikit-learn
+
+# Optimization
+ortools
+pulp
+
+# Visualization
+matplotlib
+seaborn
+contextily
+folium
+
+# Web framework
+fastapi
+uvicorn
+
+# Template engine
+jinja2
+
+# Code quality (optional)
+black
+isort
+ruff
+pytest
+
+# Google Earth Engine (optional)
+google-api-python-client
+earthengine-api

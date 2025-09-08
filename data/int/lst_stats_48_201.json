@@ -1,0 +1,11 @@
+{
+  "county_fips": "48201",
+  "county_name": "Harris County, TX",
+  "mean_lst_celsius": 35.236388564628434,
+  "std_lst_celsius": 2.44027627238159,
+  "min_lst_celsius": 31.0,
+  "max_lst_celsius": 39.0,
+  "p25_lst_celsius": 33.421484891766674,
+  "p75_lst_celsius": 37.36678791532796,
+  "p95_lst_celsius": 39.0
+}
