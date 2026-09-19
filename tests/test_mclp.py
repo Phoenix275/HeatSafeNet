@@ -93,5 +93,5 @@ def test_real_county_coverage_solves(ortools_solver, coverage, scenario):
     assert info["status"] == "optimal"
     assert 0 < len(sites) <= 5
     assert 0 < value <= sum(weights) + 1e-9
-    greedy_sites, greedy_value, _ = ortools_solver.solve_mclp_greedy(data["coverage_matrix"], weights, K=5)
+    _, greedy_value, _ = ortools_solver.solve_mclp_greedy(data["coverage_matrix"], weights, K=5)
     assert greedy_value <= value + 1e-9
