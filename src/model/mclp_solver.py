@@ -199,10 +199,15 @@ class MCLPSolver:
                     all_sites.add(site)
         all_sites = sorted(list(all_sites))
         
-        # Precompute site-to-demand mapping
+        # Precompute site-to-demand mapping. JSON turns integer keys into
+        # strings, so normalize demand indices before using them as list indexes.
         site_coverage = {j: [] for j in all_sites}
         for i, covering_sites in coverage_matrix.items():
+            i = int(i) if isinstance(i, str) and i.isdigit() else i
+            if not isinstance(i, int) or i >= num_demand:
+                continue
             for j in covering_sites:
+                j = int(j) if isinstance(j, str) and j.isdigit() else j
                 if j in site_coverage:
                     site_coverage[j].append(i)
                     
