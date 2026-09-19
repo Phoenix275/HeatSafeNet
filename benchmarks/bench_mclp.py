@@ -7,6 +7,7 @@ county coverage data and on larger random instances.
 """
 
 import contextlib
+import importlib
 import io
 import json
 import random
@@ -18,7 +19,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src" / "model"))
 
-from mclp_solver import MCLPSolver  # noqa: E402
+# Loaded after the path tweak above; importlib keeps linters happy across ruff versions.
+MCLPSolver = importlib.import_module("mclp_solver").MCLPSolver
 
 
 def quiet(fn, *args, **kwargs):
