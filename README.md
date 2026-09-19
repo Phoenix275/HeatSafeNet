@@ -64,6 +64,16 @@ python src/webapp/app.py
 - **Efficiency**: 5 facilities selected from 20 candidates  
 - **Performance**: Optimal solution found in <2 seconds
 
+## Tests and Benchmarks
+
+```bash
+pip install -r requirements-dev.txt
+pytest -q                          # solver correctness, including brute-force checks
+python benchmarks/bench_mclp.py    # exact (OR-Tools) vs greedy: time and optimality gap
+```
+
+GitHub Actions runs both on every push. On the bundled data and larger random instances, the greedy heuristic reaches 98 to 100% of the optimal coverage objective in a few milliseconds. See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the model, full results, and a note on the demo data.
+
 ## Technical Implementation
 
 ### Technologies Used

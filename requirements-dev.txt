@@ -1,0 +1,7 @@
+# Minimal dependencies for the solver tests, benchmark, and CI
+# (the full geospatial stack in requirements.txt is not needed for these)
+numpy
+pandas
+ortools
+pytest
+ruff
